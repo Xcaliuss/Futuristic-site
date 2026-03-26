@@ -1,0 +1,158 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Future of AI</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0a0a0a;
+      color: #ffffff;
+    }header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+p {
+  max-width: 600px;
+  margin: 20px auto;
+  line-height: 1.6;
+}
+
+button {
+  padding: 12px 24px;
+  border: none;
+  background: #00c6ff;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #00f2fe;
+  transform: scale(1.05);
+}
+
+section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: #111;
+  padding: 20px;
+  border-radius: 12px;
+  width: 250px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #000;
+}
+
+  </style>
+</head>
+<body><header>
+  <h1>Future of AI</h1>
+  <p>Explore how artificial intelligence is shaping tomorrow. From automation to creativity, the future is being built today.</p>
+  <button onclick="scrollToSection()">Explore</button>
+</header><section id="about">
+  <h2>About AI</h2>
+  <p>Artificial Intelligence is transforming industries, enhancing human capabilities, and redefining innovation across the globe.</p>
+</section><section>
+  <h2>AI Technologies</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Machine Learning</h3>
+      <p>Systems that learn and improve from experience.</p>
+    </div>
+    <div class="card">
+      <h3>Computer Vision</h3>
+      <p>Machines that understand images and videos.</p>
+    </div>
+    <div class="card">
+      <h3>Natural Language</h3>
+      <p>AI that understands human language.</p>
+    </div>
+  </div>
+</section><section>
+  <h2>The Future</h2>
+  <p>AI will revolutionize healthcare, education, transportation, and creativity in ways we are only beginning to imagine.</p>
+</section><footer>
+  <p>© 2026 Future of AI</p>
+</footer><script>
+  function scrollToSection() {
+    document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+  }
+</script><!-- AURORA BACKGROUND PLACEHOLDER --><!-- You cannot directly use the React Aurora code in this HTML file.
+To use it, you would need a React setup (like Vite or Next.js).
+
+TEMP SOLUTION:
+We will simulate a background layer where you can later integrate it.
+--><div id="aurora-bg"></div><style>
+#aurora-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: radial-gradient(circle at 20% 30%, rgba(82,39,255,0.4), transparent),
+              radial-gradient(circle at 80% 70%, rgba(124,255,103,0.3), transparent);
+  animation: auroraMove 10s infinite alternate ease-in-out;
+}
+
+@keyframes auroraMove {
+  0% { filter: blur(40px); transform: translateY(0px); }
+  100% { filter: blur(80px); transform: translateY(-30px); }
+}
+</style><!-- BORDER GLOW EFFECT (SIMPLIFIED VERSION FOR HTML) --><style>
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 12px;
+  background: linear-gradient(120deg, #c084fc, #f472b6, #38bdf8);
+  filter: blur(10px);
+  opacity: 0;
+  transition: 0.3s;
+  z-index: -1;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+</style></body>
+</html>
